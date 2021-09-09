@@ -5,6 +5,13 @@ terraform {
       source  = "shipa-corp/shipa"
     }
   }
+  backend "remote" {
+    organization = "shipa-test"
+
+    workspaces {
+      name = "gh-actions-demo"
+    }
+  }
 }
 
 provider "shipa" {
