@@ -1,8 +1,3 @@
-provider "shipa" {
-  host = "htt://target.shipa.cloud:8080"
-  token = var.SHIPA_TOKEN
-}
-
 # Payment app - Create App
 
 resource "shipa_app" "payment" {
