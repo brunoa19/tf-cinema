@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    shipa = {
-      version = "0.0.1"
-      source  = "shipa.io/terraform/shipa"
-    }
-  }
-}
-
 provider "shipa" {
   host = "htt://target.shipa.cloud:8080"
   token = var.SHIPA_TOKEN
